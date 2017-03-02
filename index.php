@@ -14,10 +14,16 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" source="style.css"> 
    <title>Contact Manager</title>
  </head>
  <body>
    <h1>Contacts</h1>
+
+  <!-- CONTACT LIST -->
+  <div class="container-fluid contact-list">
+  </div>
+  <!-- CREATE NEW CONTACT -->
 <form>
 <div class="form-group">
   <label>Name</label>
@@ -37,5 +43,7 @@
 </div>
 <button type="submit" class="btn btn-primary">Add</button>
 </form>
+<!-- END CREATE NEW CONTACT -->
+
  </body>
 </html>
