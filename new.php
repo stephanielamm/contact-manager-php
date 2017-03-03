@@ -1,9 +1,16 @@
 <?php
 ?>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<!-- CREATE NEW CONTACT -->
-<form>
+
+<div class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title">Add New Contact</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
   <div class="form-group">
     <label>Name</label>
     <input type="text" class="form-control" id="name" placeholder="Enter Name">
@@ -83,6 +90,13 @@
     <label>Notes</label>
     <textarea class="form-control" id="notes" rows="3"></textarea>
   </div>
-    <button type="submit" class="btn btn-primary">Add</button>
 </form>
+</div>
+<div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+</div>
+</div>
+</div>
 <!-- END CREATE NEW CONTACT -->
