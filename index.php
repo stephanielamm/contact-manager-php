@@ -3,7 +3,7 @@
 
   $contacts = $db->query('SELECT * FROM contacts')->fetchALL(PDO::FETCH_ASSOC);
 ?>
-<h3>Items: <?= count($contacts); ?></h3>
+<h3>Items: <?= count($contacts); echo reset($contacts[1]) ?></h3>
 
 <table class="table table-hover">
   <thead>
@@ -14,7 +14,7 @@
     <th>Phone Number</th>
     <th>Address</th>
     <th>City</th>
-    <th>State</th>
+    <th>state</th>
     <th>Zip Code</th>
     <th>Notes</th>
   </thead>

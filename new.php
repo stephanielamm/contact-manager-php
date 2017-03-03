@@ -29,7 +29,7 @@
     <input type="text" class="form-control" id="address2" placeholder="Enter Additional Address">
     <input type="text" class="form-control" id="city" placeholder="City">
     <div class="form-group contact_state">
-                  <label for="contact_state">State:</label>
+                  <label for="contact_state">state:</label>
                   <select name="contact_state" id="contact_state" value="_">
                     <option value=""> </option>
                     <option value="AL">Alabama</option>

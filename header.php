@@ -15,7 +15,7 @@
    <link rel="stylesheet" href="/css/style.css">
  </head>
  <body>
-   <h1>My Contacts</h1>
+   <h1><a href="index.php">My Contacts</a></h1>
 
  </body>
 </html>

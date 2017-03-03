@@ -673,7 +673,7 @@ var Carousel = function ($) {
       }
 
       if (this._config.interval && !this._isPaused) {
-        this._interval = setInterval((document.visibilityState ? this.nextWhenVisible : this.next).bind(this), this._config.interval);
+        this._interval = setInterval((document.visibilitystate ? this.nextWhenVisible : this.next).bind(this), this._config.interval);
       }
     };
 
@@ -2798,7 +2798,7 @@ var Tooltip = function ($) {
     LEFT: 'middle right'
   };
 
-  var HoverState = {
+  var Hoverstate = {
     SHOW: 'show',
     OUT: 'out'
   };
@@ -2851,7 +2851,7 @@ var Tooltip = function ($) {
       // private
       this._isEnabled = true;
       this._timeout = 0;
-      this._hoverState = '';
+      this._hoverstate = '';
       this._activeTrigger = {};
       this._isTransitioning = false;
       this._tether = null;
@@ -2924,7 +2924,7 @@ var Tooltip = function ($) {
 
       this._isEnabled = null;
       this._timeout = null;
-      this._hoverState = null;
+      this._hoverstate = null;
       this._activeTrigger = null;
       this._tether = null;
 
@@ -2992,13 +2992,13 @@ var Tooltip = function ($) {
         $(tip).addClass(ClassName.SHOW);
 
         var complete = function complete() {
-          var prevHoverState = _this22._hoverState;
-          _this22._hoverState = null;
+          var prevHoverstate = _this22._hoverstate;
+          _this22._hoverstate = null;
           _this22._isTransitioning = false;
 
           $(_this22.element).trigger(_this22.constructor.Event.SHOWN);
 
-          if (prevHoverState === HoverState.OUT) {
+          if (prevHoverstate === Hoverstate.OUT) {
             _this22._leave(null, _this22);
           }
         };
@@ -3022,7 +3022,7 @@ var Tooltip = function ($) {
         throw new Error('Tooltip is transitioning');
       }
       var complete = function complete() {
-        if (_this23._hoverState !== HoverState.SHOW && tip.parentNode) {
+        if (_this23._hoverstate !== Hoverstate.SHOW && tip.parentNode) {
           tip.parentNode.removeChild(tip);
         }
 
@@ -3055,7 +3055,7 @@ var Tooltip = function ($) {
         complete();
       }
 
-      this._hoverState = '';
+      this._hoverstate = '';
     };
 
     // protected
@@ -3174,14 +3174,14 @@ var Tooltip = function ($) {
         context._activeTrigger[event.type === 'focusin' ? Trigger.FOCUS : Trigger.HOVER] = true;
       }
 
-      if ($(context.getTipElement()).hasClass(ClassName.SHOW) || context._hoverState === HoverState.SHOW) {
-        context._hoverState = HoverState.SHOW;
+      if ($(context.getTipElement()).hasClass(ClassName.SHOW) || context._hoverstate === Hoverstate.SHOW) {
+        context._hoverstate = Hoverstate.SHOW;
         return;
       }
 
       clearTimeout(context._timeout);
 
-      context._hoverState = HoverState.SHOW;
+      context._hoverstate = Hoverstate.SHOW;
 
       if (!context.config.delay || !context.config.delay.show) {
         context.show();
@@ -3189,7 +3189,7 @@ var Tooltip = function ($) {
       }
 
       context._timeout = setTimeout(function () {
-        if (context._hoverState === HoverState.SHOW) {
+        if (context._hoverstate === Hoverstate.SHOW) {
           context.show();
         }
       }, context.config.delay.show);
@@ -3215,7 +3215,7 @@ var Tooltip = function ($) {
 
       clearTimeout(context._timeout);
 
-      context._hoverState = HoverState.OUT;
+      context._hoverstate = Hoverstate.OUT;
 
       if (!context.config.delay || !context.config.delay.hide) {
         context.hide();
@@ -3223,7 +3223,7 @@ var Tooltip = function ($) {
       }
 
       context._timeout = setTimeout(function () {
-        if (context._hoverState === HoverState.OUT) {
+        if (context._hoverstate === Hoverstate.OUT) {
           context.hide();
         }
       }, context.config.delay.hide);

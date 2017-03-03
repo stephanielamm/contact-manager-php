@@ -5,7 +5,7 @@
   $stmt = $db->prepare('SELECT * from contacts WHERE id = :id LIMIT 1');
   $stmt->bindParam(':id', $id);
   $stmt->execute();
-  $task = $stmt->fetch(PDO::FETCH_ASSOC);
+  $contact = $stmt->fetch(PDO::FETCH_ASSOC);
 
  ?>
 
@@ -25,41 +25,41 @@
 <h1>Edit Contact</h1>
 
 <form method="POST" action="/update.php">
-  <input type="hidden" name="id" id="task_id" value="<?= $contact['id']; ?>" />
+  <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 
   <div class="form-group">
-    <label for="contact_first">First Name</label>
-    <input class="form-control" type="text" name="first" id="first" value="<?= $contact['first']; ?>" />
+    <label for="contact_First">First Name</label>
+    <input class="form-control" type="text" name="First" id="First" value="<?= $contact['First']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_last">Last Name</label>
-    <input class="form-control" type="text" name="last" id="last" value="<?= $contact['last']; ?>" />
+    <label for="contact_Last">Last Name</label>
+    <input class="form-control" type="text" name="Last" id="Last" value="<?= $contact['Last']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_title">Title</label>
-    <input class="form-control" type="text" name="title" id="title" value="<?= $contact['title']; ?>" />
+    <label for="contact_Title">Title</label>
+    <input class="form-control" type="text" name="Title" id="Title" value="<?= $contact['Title']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_phone">Phone</label>
-    <textarea class="form-control" name="phone" id="phone"><?= $contact['phone']; ?></textarea>
+    <label for="contact_Phone">Phone</label>
+    <textarea class="form-control" name="Phone" id="Phone"><?= $contact['Phone']; ?></textarea>
   </div>
 
   <div class="form-group">
-    <label for="contact_address">Address</label>
-    <input class="form-control" type="text" name="address" id="address" value="<?= $contact['address']; ?>" />
+    <label for="contact_Address">Address</label>
+    <input class="form-control" type="text" name="Address" id="Address" value="<?= $contact['Address']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_city">City</label>
-    <input class="form-control" type="text" name="city" id="title" value="<?= $contact['city']; ?>" />
+    <label for="contact_City">City</label>
+    <input class="form-control" type="text" name="City" id="Title" value="<?= $contact['City']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_state">State</label>
-    <select name="state" id="contact_state" value="<?= $contact['state']; ?>" class="form-control">
+    <label for="contact_State">State</label>
+    <select name="State" id="contact_State" value="<?= $contact['State']; ?>" class="form-control">
       <option value=""> </option>
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
@@ -116,13 +116,19 @@
   </div>
 
   <div class="form-group">
-    <label for="contact_zip">Zip Code</label>
-    <input class="form-control" type="text" name="zip" id="zip" value="<?= $contact['zip']; ?>" />
+    <label for="contact_Zipcode">Zip Code</label>
+    <input class="form-control" type="text" name="Zipcode" id="Zipcode" value="<?= $contact['Zipcode']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_notes">Notes</label>
-    <textarea class="form-control" name="notes" id="notes"><?= $contact['notes']; ?></textarea>
+    <label for="contact_Notes">Notes</label>
+    <textarea class="form-control" name="Notes" id="Notes"><?= $contact['Notes']; ?></textarea>
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="completed" value="1"<?= ($contacts['completed'] == 1) ? ' checked' : ''; ?>> Completed
+    </label>
   </div>
 
   <button class="btn btn-primary">Save Contact</button>
