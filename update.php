@@ -4,15 +4,15 @@ $stmt = $db->prepare('UPDATE contacts SET first = :first, last = :last, title = 
 
 $stmt->execute(array(
   ':id' => $_POST['id'],
-  ':first' => $_POST['First'],
-  ':last' => $_POST['Last'],
-  ':title' => $_POST['Title'],
-  ':phone' => $_POST['Phone'],
-  ':address' => $_POST['Address'],
-  ':city' => $_POST['City'],
-  ':state' => $_POST['State'],
-  ':zipcode' => $_POST['Zipcode'],
-  ':notes' => $_POST['Notes'],
+  ':first' => $_POST['first'],
+  ':last' => $_POST['last'],
+  ':title' => $_POST['title'],
+  ':phone' => $_POST['phone']
+  ':address' => $_POST['address'],
+  ':city' => $_POST['city'],
+  ':state' => $_POST['state'],
+  ':zipcode' => $_POST['zipcode'],
+  ':notes' => $_POST['notes'],
   ':updated' => array_key_exists('updated', $_POST) ? $_POST['updated'] : 0
 ));
 
