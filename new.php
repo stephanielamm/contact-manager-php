@@ -1,15 +1,5 @@
 <?php
 include 'header.php';
-$id = $_GET['id'];
-
-$stmt = $db->prepare("INSERT INTO contacts (first, last, title, phone, address, city, state, zipcode, notes)
-VALUES
-(:first, :last, :title, :phone, :address, :city, :state, :zipcode, :notes)
-");
-
-$stmt->bindParam('id', $id);
-$stmt->execute();
-$contact = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -17,7 +7,7 @@ $contact = $stmt->fetch(PDO::FETCH_ASSOC);
   <div class="row justify-content-md-center">
     <div class="col col-lg-6 col-md-10">
 
-<form method="POST" action="create.php">
+<form method="POST" action="/create.php">
   <h1>Create New Contact</h1>
 
   <!-- CLOSE BUTTON -->
@@ -27,7 +17,7 @@ $contact = $stmt->fetch(PDO::FETCH_ASSOC);
 
   <!-- START OF ADD NEW CONTACT FORM -->
   <form method="POST" action="/update.php">
-    <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
+    <input type="hidden" name="id" id="id" value="<?= $contact['id']; ?>" />
 
   <div class="form-group">
     <label>First Name</label>
