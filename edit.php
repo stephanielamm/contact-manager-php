@@ -15,21 +15,29 @@
    </div>
  <?php endif; ?>
 
+ <?php if (array_key_exists('deleted', $_GET)) : ?>
+ <div class="alert alert-danger">
+   <p><strong>Your contact has been deleted!</strong></p>
+ </div>
+ <?php endif; ?>
+
 <?php if (array_key_exists('created', $_GET)) : ?>
 <div class="alert alert-info">
   <p>Your contact was created.</p>
 </div>
 <?php endif; ?>
 
-<!-- START OF CONTACT FORM -->
 <div class=container-fluid style="background-color: rgba(0, 255, 0, 0.11); padding-top: 50px; padding-bottom: 120px;">
   <div class="row justify-content-md-center">
-    <div class="col col-lg-6 col-md-10" id="contact-form">
+    <div class="col col-lg-6 col-md-10">
   <h1>Edit Contact</h1>
+
+<!-- CLOSE BUTTON -->
 <a href="index.php"><button type="button" class="close" aria-label="Close">
   <span aria-hidden="true">&times;</span>
 </button></a>
 
+<!-- START OF CONTACT FORM -->
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 
