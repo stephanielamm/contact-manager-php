@@ -2,37 +2,41 @@
 include 'header.php';
 
 ?>
-
-<div class="modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      <h5 class="modal-title">Add New Contact</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
+<div class=container-fluid style="background-color: rgba(0, 255, 0, 0.11); padding-top: 50px; padding-bottom: 120px;">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-6 col-md-10">
+<form method="POST" action="create.php">
   <div class="form-group">
-    <label>Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Enter Name">
+    <label>First Name</label>
+    <input type="text" class="form-control" id="first" placeholder="Enter First Name">
   </div>
   <div class="form-group">
-    <label>Phone Number</label> <!-- Will allow for cell, home, and add button for additional phone number -->
+    <label>Last Name</label>
+    <input type="text" class="form-control" id="last" placeholder="Enter Last Name">
+  </div>
+  <div class="form-group">
+    <label>Title</label>
     <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
   </div>
   <div class="form-group">
-    <label>Email Address</label> <!-- Will add button for additional email -->
+    <label>Phone Number</label>
+    <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+  </div>
+  <!--div class="form-group">
+    <label>Email Address</label>
     <input type="text" class="form-control" id="email" placeholder="Enter Email">
+  </div-->
+  <div class="form-group">
+    <label>Address</label>
+    <input type="text" class="form-control" id="address" placeholder="Enter Address">
   </div>
   <div class="form-group">
-    <label>Address</label> <!-- Will add button for additional email -->
-    <input type="text" class="form-control" id="address1" placeholder="Enter Street Address">
-    <input type="text" class="form-control" id="address2" placeholder="Enter Additional Address">
-    <input type="text" class="form-control" id="city" placeholder="City">
+    <label>City</label>
+    <input type="text" class="form-control" id="city" placeholder="Enter City">
+  </div>
     <div class="form-group contact_state">
-                  <label for="contact_state">state:</label>
-                  <select name="contact_state" id="contact_state" value="_">
+                  <label for="contact_state">State:</label>
+                  <select name="contact_state" id="state" value="_">
                     <option value=""> </option>
                     <option value="AL">Alabama</option>
                   	<option value="AK">Alaska</option>
@@ -87,18 +91,18 @@ include 'header.php';
                   	<option value="WY">Wyoming</option>
                   </select>
                 </div>
+  <div class="form-group">
+    <label>Zip Code</label>
+    <input type="text" class="form-control" id="zipcode" placeholder="Enter Zip Code">
   </div>
   <div class="form-group">
     <label>Notes</label>
     <textarea class="form-control" id="notes" rows="3"></textarea>
   </div>
+  <button class="btn btn-primary">Create New Contact</button>
 </form>
-</div>
-<div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
 </div>
 </div>
 </div>
 <!-- END CREATE NEW CONTACT -->
+<?php include 'footer.php' ?>

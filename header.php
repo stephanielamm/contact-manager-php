@@ -19,8 +19,8 @@
    <nav class="navbar navbar-inverse bg-inverse">
   <form class="form-inline"  style="padding-left: 40px;">
     <a href="index.php"> <button class="btn btn-outline-success" type="button">My Contacts</button></a>
+    <a href="new.php"> <button class="btn btn-outline-success" type="button">Create New Contact</button></a>
   </form>
-
 </nav>
 
  </body>
