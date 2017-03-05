@@ -14,7 +14,6 @@ $stmt->execute(array(
   ':state' => $_POST['state'],
   ':zipcode' => $_POST['zipcode'],
   ':notes' => $_POST['notes']
-//  ':updated' => array_key_exists('updated', $_POST) ? $_POST['updated'] : 0
 ));
 
 header('Location: http://localhost:8080/index.php?updated=true');

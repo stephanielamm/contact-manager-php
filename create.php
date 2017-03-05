@@ -19,4 +19,4 @@
     ));
   $id = $db->lastInsertId();
 
-  header('Location: http://localhost:8080/index.php?id=' . $id . '&created=true');
+  header('Location: http://localhost:8080/update.php?id=' . $id . '&created=true');
