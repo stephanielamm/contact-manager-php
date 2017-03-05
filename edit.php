@@ -21,43 +21,50 @@
 </div>
 <?php endif; ?>
 
-<h1>Edit Contact</h1>
+<!-- START OF CONTACT FORM -->
+<div class=container-fluid style="background-color: rgba(0, 255, 0, 0.11); padding-top: 50px; padding-bottom: 120px;">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-6 col-md-10" id="contact-form">
+  <h1>Edit Contact</h1>
+<a href="index.php"><button type="button" class="close" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button></a>
 
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 
   <div class="form-group">
-    <label for="contact_first">first Name</label>
+    <label for="contact_first">First Name</label>
     <input class="form-control" type="text" name="first" id="first" value="<?= $contact['first']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_last">last Name</label>
+    <label for="contact_last">Last Name</label>
     <input class="form-control" type="text" name="last" id="last" value="<?= $contact['last']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_title">title</label>
+    <label for="contact_title">Title</label>
     <input class="form-control" type="text" name="title" id="title" value="<?= $contact['title']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_phone">phone</label>
+    <label for="contact_phone">Phone Number</label>
     <textarea class="form-control" name="phone" id="phone"><?= $contact['phone']; ?></textarea>
   </div>
 
   <div class="form-group">
-    <label for="contact_address">address</label>
+    <label for="contact_address">Street Address</label>
     <input class="form-control" type="text" name="address" id="address" value="<?= $contact['address']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_city">city</label>
+    <label for="contact_city">City</label>
     <input class="form-control" type="text" name="city" id="city" value="<?= $contact['city']; ?>" />
   </div>
 
   <div class="form-group">
-    <label for="contact_state">state</label>
+    <label for="contact_state">State</label>
     <select name="state" id="contact_state" value="<?= $contact['state']; ?>" class="form-control">
       <option value=""> </option>
       <option value="AL">Alabama</option>
@@ -120,7 +127,7 @@
   </div>
 
   <div class="form-group">
-    <label for="contact_notes">notes</label>
+    <label for="contact_notes">Notes</label>
     <textarea class="form-control" name="notes" id="notes"><?= $contact['notes']; ?></textarea>
   </div>
 
@@ -132,7 +139,8 @@
 
   <button class="btn btn-primary">Save Contact</button>
   <a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
-
 </form>
-
+</div>
+</div>
+</div>
 <?php   include 'footer.php'; ?>
