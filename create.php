@@ -1,5 +1,6 @@
 <?php
   include 'database.php';
+
   $stmt = $db->prepare("INSERT INTO contacts
     (first, last, title, phone, address, city, state, zipcode, notes)
     VALUES
@@ -17,5 +18,5 @@
     ':notes' => $_POST['notes']
     ));
   $id = $db->lastInsertId();
-  header('Location: http://localhost:8080/edit.php?id=' . $id . '&created=true');
-?>
+
+  header('Location: http://localhost:8080/index.php?id=' . $id . '&created=true');

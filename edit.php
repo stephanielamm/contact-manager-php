@@ -37,7 +37,7 @@
   <span aria-hidden="true">&times;</span>
 </button></a>
 
-<!-- START OF CONTACT FORM -->
+<!-- START OF EDIT CONTACT FORM -->
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 
