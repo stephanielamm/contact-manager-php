@@ -1,13 +1,9 @@
 </div>
 </body>
 <footer id="footer">
-  <div class="container">
-  <div class="row">
-      <div class="col-lg-5">
-  <p>By Stephanie Lamm</p>
-</div>
-  <div class="col-lg-5">
-    <a href="https://github.com/stephanielamm"><img border="0" alt="Github" src="static/octocat.png" width="20" height="20"></a>
+  <div class="container-fluid">
+    <div class="row justify-content-sm-center">
+  <p>By Stephanie Lamm </p><a href="https://github.com/stephanielamm"><img border="0" alt="Github" src="static/octocat.png" width="20" height="20" style="margin-left: 5px;"></a>
 </div>
 </div>
 </div>
