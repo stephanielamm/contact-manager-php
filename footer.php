@@ -3,7 +3,7 @@
 <footer id="footer">
   <div class="container-fluid">
     <div class="row justify-content-sm-center">
-  <p>By Stephanie Lamm </p><a href="https://github.com/stephanielamm"><img border="0" alt="Github" src="static/octocat.png" width="20" height="20" style="margin-left: 5px;"></a>
+<a href="#STYLEGUIDEWILLGOHERE">STYLE GUIDE HERE</a><p>Stephanie Lamm </p><a href="https://github.com/stephanielamm"><img border="0" alt="Github" src="static/octocat.png" width="20" height="20" style="margin-left: 5px;"></a>
 </div>
 </div>
 </div>
