@@ -9,11 +9,11 @@
 
  ?>
 
-<?php if (array_key_exists('updated', $_GET)) : ?>
-  <div class="alert alert-success">
-    <p>Your contact was updated.</p>
-  </div>
-<?php endif; ?>
+ <?php if (array_key_exists('updated', $_GET)) : ?>
+   <div class="alert alert-success">
+     <p>Your contact was updated.</p>
+   </div>
+ <?php endif; ?>
 
 <?php if (array_key_exists('created', $_GET)) : ?>
 <div class="alert alert-info">
@@ -22,6 +22,7 @@
 <?php endif; ?>
 
 <a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
+
 <h1>Edit Contact</h1>
 
 <form method="POST" action="/update.php">
@@ -125,11 +126,11 @@
     <textarea class="form-control" name="notes" id="notes"><?= $contact['notes']; ?></textarea>
   </div>
 
-  <div class="checkbox">
+  <!--div class="checkbox">
     <label>
-      <input type="checkbox" name="completed" value="1"<?= ($contacts['completed'] == 1) ? ' checked' : ''; ?>> Completed
+    <input type="checkbox" name="completed" value="1"<!?= ($contacts['completed'] == 1) ? ' checked' : ''; ?>> Completed
     </label>
-  </div>
+  </div-->
 
   <button class="btn btn-primary">Save Contact</button>
 </form>

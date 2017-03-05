@@ -3,6 +3,9 @@
 
   $contacts = $db->query('SELECT * FROM contacts')->fetchALL(PDO::FETCH_ASSOC);
 ?>
+
+
+
 <h3>Items: <?= count($contacts); echo reset($contacts[1]) ?></h3>
 
 <table class="table table-hover">
