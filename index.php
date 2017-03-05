@@ -1,6 +1,6 @@
 <?php
   include 'header.php';
-
+  //include 'database.php';
   $contacts = $db->query('SELECT * FROM contacts')->fetchALL(PDO::FETCH_ASSOC);
 ?>
 

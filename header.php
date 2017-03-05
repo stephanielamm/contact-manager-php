@@ -7,15 +7,21 @@
    <meta charset="utf-8">
    <title>Contact Manager</title>
 
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
    <link rel="stylesheet" href="/css/style.css">
+   <script src="/js/script.js"></script>
+
  </head>
  <body>
-   <h1><a href="index.php">My Contacts</a></h1>
+
+<nav class="navbar navbar-light bg-faded">
+  <form class="form-inline">
+    <a href="index.php"> <button class="btn btn-outline-success" type="button">My Contacts</button></a>
+  </form>
+
+</nav>
 
  </body>
 </html>
