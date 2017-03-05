@@ -8,9 +8,9 @@
 <!--h3>Items: <?= count($contacts); echo reset($contacts[1]) ?></h3-->
 <div class="container-fluid">
   <div class="row justify-content-lg-center">
-<table class="table table-hover table-striped table-sm" style="background-color: rgba(0, 255, 0, 0.11);">
+<table class="table table-hover table-striped" style="background-color: rgba(0, 255, 0, 0.11);">
   <thead class="thead-inverse">
-    <th>Edit</th>
+    <th></span>Edit</th>
     <th>ID</th>
     <th>First</th>
     <th>Last</th>

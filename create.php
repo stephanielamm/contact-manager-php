@@ -6,6 +6,7 @@
     VALUES
     (:first, :last, :title, :phone, :address, :city, :state, :zipcode, :notes)
   ");
+
   $stmt->execute(array(
     ':first' => $_POST['first'],
     ':last' => $_POST['last'],
@@ -20,3 +21,4 @@
   $id = $db->lastInsertId();
 
   header('Location: http://localhost:8080/update.php?id=' . $id . '&created=true');
+?>

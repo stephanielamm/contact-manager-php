@@ -1,10 +1,22 @@
 <?php
 include 'header.php';
+$id = $_GET['id'];
+
+$stmt = $db->prepare("INSERT INTO contacts (first, last, title, phone, address, city, state, zipcode, notes)
+VALUES
+(:first, :last, :title, :phone, :address, :city, :state, :zipcode, :notes)
+");
+
+$stmt->bindParam('id', $id);
+$stmt->execute();
+$contact = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
+
 <div class=container-fluid style="background-color: rgba(0, 255, 0, 0.11); padding-top: 50px; padding-bottom: 120px;">
   <div class="row justify-content-md-center">
     <div class="col col-lg-6 col-md-10">
+
 <form method="POST" action="create.php">
   <h1>Create New Contact</h1>
 
@@ -14,6 +26,9 @@ include 'header.php';
   </button></a>
 
   <!-- START OF ADD NEW CONTACT FORM -->
+  <form method="POST" action="/update.php">
+    <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
+
   <div class="form-group">
     <label>First Name</label>
     <input type="text" class="form-control" id="first" placeholder="Enter First Name">
@@ -30,10 +45,6 @@ include 'header.php';
     <label>Phone Number</label>
     <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
   </div>
-  <!--div class="form-group">
-    <label>Email Address</label>
-    <input type="text" class="form-control" id="email" placeholder="Enter Email">
-  </div-->
   <div class="form-group">
     <label>Address</label>
     <input type="text" class="form-control" id="address" placeholder="Enter Address">
@@ -42,7 +53,6 @@ include 'header.php';
     <label>City</label>
     <input type="text" class="form-control" id="city" placeholder="Enter City">
   </div>
-
     <div class="form-group">
       <label for="contact_state">State</label>
       <select name="state" id="contact_state" value="_" class="form-control">
@@ -100,7 +110,6 @@ include 'header.php';
         <option value="WY">Wyoming</option>
       </select>
     </div>
-
   <div class="form-group">
     <label>Zip Code</label>
     <input type="text" class="form-control" id="zipcode" placeholder="Enter Zip Code">

@@ -9,24 +9,6 @@
 
  ?>
 
- <?php if (array_key_exists('updated', $_GET)) : ?>
-   <div class="alert alert-success">
-     <p>Your contact was updated.</p>
-   </div>
- <?php endif; ?>
-
- <?php if (array_key_exists('deleted', $_GET)) : ?>
- <div class="alert alert-danger">
-   <p><strong>Your contact has been deleted!</strong></p>
- </div>
- <?php endif; ?>
-
-<?php if (array_key_exists('created', $_GET)) : ?>
-<div class="alert alert-info">
-  <p>Your contact was created.</p>
-</div>
-<?php endif; ?>
-
 <div class=container-fluid style="background-color: rgba(0, 255, 0, 0.11); padding-top: 50px; padding-bottom: 120px;">
   <div class="row justify-content-md-center">
     <div class="col col-lg-6 col-md-10">
