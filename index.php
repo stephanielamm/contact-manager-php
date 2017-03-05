@@ -8,8 +8,8 @@
 
 <h3>Items: <?= count($contacts); echo reset($contacts[1]) ?></h3>
 
-<table class="table table-hover">
-  <thead>
+<table class="table table-hover table-striped table-sm">
+  <thead class="thead-inverse">
     <th>ID</th>
     <th>First Name</th>
     <th>Last Name</th>
