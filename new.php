@@ -7,8 +7,6 @@ include 'header.php';
   <div class="row justify-content-md-center">
     <div class="col col-lg-6 col-md-10">
 
-<form method="POST" action="/create.php">
-  <h1>Create New Contact</h1>
 
   <!-- CLOSE BUTTON -->
   <a href="index.php"><button type="button" class="close" aria-label="Close">
@@ -16,32 +14,35 @@ include 'header.php';
   </button></a>
 
   <!-- START OF ADD NEW CONTACT FORM -->
-  <form method="POST" action="/update.php">
+  <form method="POST" action="/create.php">
+
+      <h1>Create New Contact</h1>
+
     <input type="hidden" name="id" id="id" value="<?= $contact['id']; ?>" />
 
   <div class="form-group">
-    <label>First Name</label>
-    <input type="text" class="form-control" id="first" placeholder="Enter First Name">
+    <label for="contact_first">First Name</label>
+    <input class="form-control" type="text" name="first" id="first" placeholder="Enter First Name">
   </div>
   <div class="form-group">
-    <label>Last Name</label>
+    <label for="contact_last">Last Name</label>
     <input type="text" class="form-control" id="last" placeholder="Enter Last Name">
   </div>
   <div class="form-group">
-    <label>Title</label>
-    <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+    <label for="contact_title">Title</label>
+    <input class="form-control" type="text" name="title" id="title" placeholder="Enter Phone Number">
   </div>
   <div class="form-group">
-    <label>Phone Number</label>
-    <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+    <label for="contact_phone">Phone Number</label>
+    <textarea class="form-control" name="phone" id="phone" placeholder="Enter Phone Number"></textarea>
   </div>
   <div class="form-group">
-    <label>Address</label>
-    <input type="text" class="form-control" id="address" placeholder="Enter Address">
+    <label for="contact_address">Street Address</label>
+    <input class="form-control" type="text" name="address" id="address" placeholder="Enter Address">
   </div>
   <div class="form-group">
-    <label>City</label>
-    <input type="text" class="form-control" id="city" placeholder="Enter City">
+    <label for="contact_city">City</label>
+    <input class="form-control" type="text" name="city" id="city" placeholder="Enter City">
   </div>
     <div class="form-group">
       <label for="contact_state">State</label>
@@ -101,12 +102,12 @@ include 'header.php';
       </select>
     </div>
   <div class="form-group">
-    <label>Zip Code</label>
-    <input type="text" class="form-control" id="zipcode" placeholder="Enter Zip Code">
+    <label for="contact_zipcode">Zip Code</label>
+    <input class="form-control" type="text" name="zipcode" id="zipcode" placeholder="Enter Zip Code">
   </div>
   <div class="form-group">
-    <label>Notes</label>
-    <textarea class="form-control" id="notes" rows="3"></textarea>
+    <label for="contact_notes">Notes</label>
+    <textarea class="form-control" name="notes" id="notes" rows="3"></textarea>
   </div>
   <button class="btn btn-primary">Create New Contact</button>
 </form>

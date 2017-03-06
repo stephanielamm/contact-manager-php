@@ -12,7 +12,6 @@
 <div class=container-fluid style="background-color: rgba(0, 255, 0, 0.11); padding-top: 50px; padding-bottom: 120px;">
   <div class="row justify-content-md-center">
     <div class="col col-lg-6 col-md-10">
-  <h1>Edit Contact</h1>
 
 <!-- CLOSE BUTTON -->
 <a href="index.php"><button type="button" class="close" aria-label="Close">
@@ -22,6 +21,8 @@
 <!-- START OF EDIT CONTACT FORM -->
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
+
+    <h1>Edit Contact</h1>
 
   <div class="form-group">
     <label for="contact_first">First Name</label>
@@ -56,7 +57,9 @@
   <div class="form-group">
     <label for="contact_state">State</label>
     <select name="state" id="contact_state" value="<?= $contact['state']; ?>" class="form-control">
-      <option value=""> </option>
+      <option value="<?= $contact['state']; ?>"><?= $contact['state']; ?></option>
+
+
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
       <option value="AZ">Arizona</option>
@@ -121,13 +124,8 @@
     <textarea class="form-control" name="notes" id="notes"><?= $contact['notes']; ?></textarea>
   </div>
 
-  <!--div class="checkbox">
-    <label>
-    <input type="checkbox" name="completed" value="1"<!?= ($contacts['completed'] == 1) ? ' checked' : ''; ?>> Completed
-    </label>
-  </div-->
-
   <button class="btn btn-primary">Save Contact</button>
+
   <a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
 </form>
 </div>
