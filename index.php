@@ -6,42 +6,29 @@
 
 
 <!--h3>Items: <?= count($contacts); echo reset($contacts[1]) ?></h3-->
-<div class="container-fluid">
-  <div class="row justify-content-lg-center">
-<table class="table table-hover table-striped" style="background-color: rgba(0, 255, 0, 0.11);">
-  <thead class="thead-inverse">
-    <th></span>Edit</th>
-    <th>ID</th>
-    <th>First</th>
-    <th>Last</th>
-    <th>Title</th>
-    <th>Phone</th>
-    <th>Address</th>
-    <th>City</th>
-    <th>State</th>
-    <th>Zip</th>
-    <th>Notes</th>
-  </thead>
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h4 class="panel-title">Contacts</h4>
+  </div>
 
-  <tbody>
-    <?php foreach ($contacts as $contact) :?>
-      <tr>
-        <td><a href="/edit.php?id=<?=$contact['id'];?>">Edit</a></td>
-        <td><?= $contact['id']; ?></td>
-        <td><?= $contact['first']; ?></td>
-        <td><?= $contact['last']; ?></td>
-        <td><?= $contact['title']; ?></td>
-        <td><?= $contact['phone']; ?></td>
-        <td><?= $contact['address']; ?></td>
-        <td><?= $contact['city']; ?></td>
-        <td><?= $contact['state']; ?></td>
-        <td><?= $contact['zipcode']; ?></td>
-        <td><?= $contact['notes']; ?></td>
-      </tr>
-    <?php endforeach; ?>
-  </tbody>
-</table>
+<?php foreach ($contacts as $contact) :?>
+  <ul class="list-group" id="contact-list">
+      <li class="list-group-item">
+          <div class="col-xs-12 col-sm-10">
+              <span class="edit"><a href="/edit.php?id=<?=$contact['id'];?>"></span>
+              <span class="name"><?= $contact['first']; ?> <?= $contact['last']; ?></span><br>
+              <span class="text-muted"><?= $contact['title']; ?></span><br></span>
+              <span class="text-muted"><?= $contact['phone']; ?></span><br></span>
+              <span class="text-muted"><?= $contact['address']; ?></span><br></span>
+              <span class="text-muted"><?= $contact['city']; ?>, <?= $contact['state']; ?> <?= $contact['zipcode']; ?></span><br></span>
+              <span class="text-muted"><?= $contact['notes']; ?></span><br></span>
+          </div>
+          <div class="clearfix"></div>
+      </li>
+  </ul>
+<?php endforeach; ?>
+
 </div>
-</div>
-</div>
+
+
 <?php include 'footer.php';?>
