@@ -21,9 +21,9 @@
  <body>
   <div id="wrap">
    <nav class="navbar navbar-inverse bg-inverse">
-  <form class="form-inline"  style="padding-left: 40px;">
-    <a href="index.php" style="padding-right: 15px"> <button class="btn btn-outline-success" type="button">My Contacts</button></a>
-    <a href="new.php"> <button class="btn btn-outline-success" type="button">Create New Contact</button></a>
+  <form class="form-inline">
+    <a href="index.php" class="my-contacts"> <button class="btn btn-outline-success my-contacts" type="button">My Contacts</button></a>
+    <a href="new.php"> <button class="btn btn-outline-success my-contacts" type="button">Create New Contact</button></a>
   </form>
 </nav>
 

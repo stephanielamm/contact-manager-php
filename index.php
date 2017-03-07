@@ -15,11 +15,11 @@
           <div class="col-xs-12 col-sm-10">
               <span class="edit"><a href="/edit.php?id=<?=$contact['id'];?>"></span>
               <span class="name"><?= $contact['first']; ?> <?= $contact['last']; ?></span><br>
-              <span class="text-muted"><?= $contact['title']; ?></span><br></span>
-              <span class="text-muted"><?= $contact['phone']; ?></span><br></span>
-              <span class="text-muted"><?= $contact['address']; ?></span><br></span>
-              <span class="text-muted"><?= $contact['city']; ?>, <?= $contact['state']; ?> <?= $contact['zipcode']; ?></span><br></span>
-              <span class="text-muted"><?= $contact['notes']; ?></span><br></span>
+              <span class="detail text-muted"><?= $contact['title']; ?></span><br></span>
+              <span class="detail text-muted"><?= $contact['phone']; ?></span><br></span>
+              <span class="detail text-muted"><?= $contact['address']; ?></span><br></span>
+              <span class="detail text-muted"><?= $contact['city']; ?>, <?= $contact['state']; ?> <?= $contact['zipcode']; ?></span><br></span>
+              <span class="detail text-muted"><?= $contact['notes']; ?></span><br></span>
           </div>
           <div class="clearfix"></div>
       </li>

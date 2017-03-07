@@ -9,17 +9,60 @@ html, body {
   margin: 0 auto -30px;
   padding: 0 0 30px;
 }
-
+/* FOOTER */
 footer {
-  height: 30px;
+  height: 40px;
   background-color: #292b2c;
   color: #5cb85c;
 }
 
-.name {
-
+/* unvisited link */
+a:link {
+    color: ;
 }
 
-.panel-title {
+/* visited link */
+a:visited {
+    color: ;
+}
 
+/* mouse over link */
+a:hover {
+    color: #292b2c;
+}
+
+/* selected link */
+a:active {
+    color: ;
+}
+
+/* HEADER */
+.navbar {
+  text-align: center;
+}
+.form-inline {
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.my-contacts {
+  padding-right: 15px;
+  font-size: 30px;
+}
+/* CONTACT LIST */
+.panel-title {
+  padding-left: 60px;
+}
+
+#contact-list {
+  padding-left: 60px;
+}
+/* CONTACT PANELS */
+.name {
+ font-size: 25px;
+ color: #5cb85c;
+}
+.detail {
+  font-size: 20px;
 }
