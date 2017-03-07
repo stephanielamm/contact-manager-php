@@ -26,7 +26,7 @@ include 'header.php';
   </div>
   <div class="form-group">
     <label for="contact_last">Last Name</label>
-    <input type="text" class="form-control" id="last" placeholder="Enter Last Name">
+    <input type="text" class="form-control" name="last" id="last" placeholder="Enter Last Name">
   </div>
   <div class="form-group">
     <label for="contact_title">Title</label>

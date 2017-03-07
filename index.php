@@ -4,11 +4,9 @@
   $contacts = $db->query('SELECT * FROM contacts')->fetchALL(PDO::FETCH_ASSOC);
 ?>
 
-
-<!--h3>Items: <?= count($contacts); echo reset($contacts[1]) ?></h3-->
 <div class="panel panel-default">
   <div class="panel-heading">
-      <h4 class="panel-title">Contacts</h4>
+      <h2 class="panel-title">All Contacts</h2>
   </div>
 
 <?php foreach ($contacts as $contact) :?>

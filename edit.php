@@ -57,9 +57,7 @@
   <div class="form-group">
     <label for="contact_state">State</label>
     <select name="state" id="contact_state" value="<?= $contact['state']; ?>" class="form-control">
-      <option value="<?= $contact['state']; ?>"><?= $contact['state']; ?></option>
-
-
+      <option><?= $contact['state']; ?></option>
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
       <option value="AZ">Arizona</option>
