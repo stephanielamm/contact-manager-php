@@ -2,8 +2,8 @@
 </body>
 <footer id="footer">
   <div class="container-fluid">
-    <div class="row justify-content-sm-center">
-<p>Copyright Stephanie Lamm </p> <a href="https://github.com/stephanielamm"><i class="fa fa-github git-button" aria-hidden="true"></i></a>
+    <div class="row justify-content-sm-center footer-text">
+<p>Copyright Stephanie Lamm</p>&nbsp;<a href="https://github.com/stephanielamm"><i class="fa fa-github git-button" aria-hidden="true"></i></a>
 </div>
 </div>
 </div>

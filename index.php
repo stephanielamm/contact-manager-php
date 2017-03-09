@@ -17,14 +17,18 @@
 <?php foreach ($contacts as $contact) :?>
   <ul class="list-group" id="contact-list">
       <li class="list-group-item">
-          <div class="col-xs-12 col-sm-10">
-              <span class="edit"><a href="/edit.php?id=<?=$contact['id'];?>"></span>
-              <span class="name"><?= $contact['first']; ?> <?= $contact['last']; ?></span><br>
-              <span class="detail text-muted"><?= $contact['title']; ?></span><br></span>
-              <span class="detail text-muted"><?= $contact['phone']; ?></span><br></span>
-              <span class="detail text-muted"><?= $contact['address']; ?></span><br></span>
-              <span class="detail text-muted"><?= $contact['city']; ?>, <?= $contact['state']; ?> <?= $contact['zipcode']; ?></span><br></span>
-              <span class="detail text-muted"><?= $contact['notes']; ?></span><br></span>
+          <div class="col-xs-5 col-sm-5 contact-box left-detail">
+              <a href="/edit.php?id=<?=$contact['id'];?>">
+              <span class="name"><?= $contact['first']; ?> <?= $contact['last']; ?></span></a><br>
+              <span class="title"><?= $contact['title']; ?></span><br></span>
+            </div>
+            <div class="col-xs-6 col-sm-6 right-detail">
+              <p><span class="detail text-muted"><i class="fa fa-mobile icon" aria-hidden="true">&nbsp;</i><?= $contact['phone']; ?></span><br></span></p>
+              <p><span class="detail text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<?= $contact['address']; ?></span><br></span>
+              <span class="detail text-muted"><?= $contact['city']; ?>, <?= $contact['state']; ?> <?= $contact['zipcode']; ?></span><br></span></p>
+              <span class="detail text-muted"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;<?= $contact['notes']; ?></span><br></span>
+          </div>
+          <div class="col-xs-1 col-sm-1"><a href="/edit.php?id=<?=$contact['id'];?>"><i class="fa fa-pencil icon text-muted" style="float:right;" aria-hidden="true"></i></a>
           </div>
           <div class="clearfix"></div>
       </li>

@@ -1,3 +1,4 @@
+/* FRAMING CONTENT */
 html, body {
   height: 100%;
 }
@@ -13,11 +14,11 @@ html, body {
 footer {
   height: 40px;
   background-color: grey;
-  color: white;
-  font-size: 20px;
-
 }
-
+.footer-text{
+    color: white;
+    font-size: 20px;
+}
 .git-button {
   color: white;
 }
@@ -57,7 +58,7 @@ a:active {
 }
 .my-contacts {
   padding-right: 15px;
-  font-size: 30px;
+  font-size: 35px;
 }
 /* CONTACT LIST */
 .new-contact {
@@ -66,21 +67,48 @@ a:active {
 .panel-title {
   padding-left: 70px;
   font-family: 'Poppins', sans-serif, 600;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #contact-list {
   padding-left: 60px;
 }
 /* CONTACT PANELS */
+div.contact-box a {
+  text-decoration: none;
+  color: grey;
+}
+div.contact-box a :hover {
+  text-decoration: none;
+  color: black;
+}
+.left-detail {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 .name {
- font-size: 25px;
- font-family: 'Poppins', sans-serif, 600;
-
+ font-size: 28px;
+ font-family: 'Poppins', sans-serif;
+}
+.title {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif, 300;
+  font-weight: lighter;
+  line-height: 98%;
 }
 .detail {
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Raleway', sans-serif, 200;
+  line-height: 98%;
+}
+.right-detail {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* ICONS */
+.icon {
+  font-size: 25px;
 }
 
 /* MEDIA QUERIES
