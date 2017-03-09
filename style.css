@@ -12,8 +12,14 @@ html, body {
 /* FOOTER */
 footer {
   height: 40px;
-  background-color: #292b2c;
-  color: #5cb85c;
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+
+}
+
+.git-button {
+  color: white;
 }
 
 /* unvisited link */
@@ -38,7 +44,10 @@ a:active {
 
 /* HEADER */
 .navbar {
-  text-align: center;
+  background-color: grey;
+}
+.btn {
+  color: white;
 }
 .form-inline {
   padding-left: 60px;
@@ -51,8 +60,13 @@ a:active {
   font-size: 30px;
 }
 /* CONTACT LIST */
+.new-contact {
+  font-size: 30px;
+}
 .panel-title {
-  padding-left: 60px;
+  padding-left: 70px;
+  font-family: 'Poppins', sans-serif, 600;
+  font-size: 50px;
 }
 
 #contact-list {
@@ -61,8 +75,15 @@ a:active {
 /* CONTACT PANELS */
 .name {
  font-size: 25px;
- color: #5cb85c;
+ font-family: 'Poppins', sans-serif, 600;
+
 }
 .detail {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif, 200;
 }
+
+/* MEDIA QUERIES
+.panel-title {
+  font-size: 30px;
+}*/

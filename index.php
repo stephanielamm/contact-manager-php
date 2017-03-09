@@ -4,10 +4,15 @@
   $contacts = $db->query('SELECT * FROM contacts')->fetchALL(PDO::FETCH_ASSOC);
 ?>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
+<div class="container panel panel-default">
+  <div class="row panel-heading">
+  <div class="col-lg-8 col-md-10 col-sm-11">
       <h2 class="panel-title">All Contacts</h2>
+    </div>
+      <div class="col-lg-4 col-md-2 col-ms-1">
+      <a href="new.php"> <button class="btn btn-outline new-contact" style="float: right;" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button></a>
   </div>
+</div>
 
 <?php foreach ($contacts as $contact) :?>
   <ul class="list-group" id="contact-list">
