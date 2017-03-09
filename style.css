@@ -1,15 +1,12 @@
 /* FRAMING CONTENT */
-html, body {
-  height: 100%;
-}
 
-#wrap {
+/*#wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -30px;
   padding: 0 0 30px;
-}
+}*/
 /* FOOTER */
 footer {
   height: 40px;
@@ -23,24 +20,9 @@ footer {
   color: white;
 }
 
-/* unvisited link */
-a:link {
-    color: ;
-}
-
-/* visited link */
-a:visited {
-    color: ;
-}
-
 /* mouse over link */
 a:hover {
     color: #292b2c;
-}
-
-/* selected link */
-a:active {
-    color: ;
 }
 
 /* HEADER */
@@ -65,14 +47,11 @@ a:active {
   font-size: 30px;
 }
 .panel-title {
-  padding-left: 70px;
+  padding-left: 20px;
   font-family: 'Poppins', sans-serif, 600;
   font-size: 40px;
 }
 
-#contact-list {
-  padding-left: 60px;
-}
 /* CONTACT PANELS */
 div.contact-box a {
   text-decoration: none;
@@ -81,6 +60,9 @@ div.contact-box a {
 div.contact-box a :hover {
   text-decoration: none;
   color: black;
+}
+.contact-box{
+  border-bottom: 1px solid #ccc;
 }
 .left-detail {
   padding-bottom: 20px;
@@ -99,7 +81,7 @@ div.contact-box a :hover {
 .detail {
   font-size: 22px;
   font-family: 'Raleway', sans-serif, 200;
-  line-height: 98%;
+  font-weight: lighter;
 }
 .right-detail {
   padding-bottom: 20px;
