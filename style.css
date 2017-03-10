@@ -120,7 +120,7 @@ div.contact-box a :hover {
 
 /* FLOATING BUTTON FROM https://codepen.io/simoberny/pen/pJZJQY */
 
-#floating-button{
+#floating-button {
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -132,7 +132,7 @@ div.contact-box a :hover {
   box-shadow: 0px 2px 5px #666;
 }
 
-.plus{
+.plus {
   color: white;
   position: absolute;
   top: 0;
@@ -151,7 +151,7 @@ div.contact-box a :hover {
   transition: all 0.3s;
 }
 
-#container-floating{
+#container-floating {
   position: fixed;
   width: 70px;
   height: 70px;
@@ -160,18 +160,18 @@ div.contact-box a :hover {
   z-index: 50px;
 }
 
-#container-floating:hover{
+#container-floating:hover {
   height: 400px;
   width: 90px;
   padding: 30px;
 }
 
-#container-floating:hover .plus{
+#container-floating:hover .plus {
   animation: plus-in 0.15s linear;
   animation-fill-mode: forwards;
 }
 
-.edit{
+.edit {
   position: absolute;
   top: 0;
   display: block;
@@ -188,33 +188,67 @@ div.contact-box a :hover {
   animation: edit-out 0.3s;
 }
 
-#container-floating:hover .edit{
+.back {
+  color: white;
+  position: absolute;
+  top: 15px;
+  display: block;
+  bottom: 0;
+  left: 1px;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  opacity: 0;
+  margin: 0;
+  font-size: 25px;
+  transform: rotateZ(-70deg);
+  transition: all 0.3s;
+  animation: back-out 0.3s;
+}
+
+#container-floating:hover .edit {
   animation: edit-in 0.2s;
    animation-delay: 0.1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes edit-in{
+#container-floating:hover .back {
+  animation: back-in 0.2s;
+   animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes edit-in {
     from {opacity: 0; transform: rotateZ(-70deg);}
     to {opacity: 1; transform: rotateZ(0deg);}
 }
 
-@keyframes edit-out{
+@keyframes edit-out {
     from {opacity: 1; transform: rotateZ(0deg);}
     to {opacity: 0; transform: rotateZ(-70deg);}
 }
 
-@keyframes plus-in{
+@keyframes back-in{
+    from {opacity: 0; transform: rotateZ(-70deg);}
+    to {opacity: 1; transform: rotateZ(0deg);}
+}
+
+@keyframes back-out{
+    from {opacity: 1; transform: rotateZ(0deg);}
+    to {opacity: 0; transform: rotateZ(-70deg);}
+}
+
+@keyframes plus-in {
     from {opacity: 1; transform: rotateZ(0deg);}
     to {opacity: 0; transform: rotateZ(180deg);}
 }
 
-@keyframes plus-out{
+@keyframes plus-out {
     from {opacity: 0; transform: rotateZ(180deg);}
     to {opacity: 1; transform: rotateZ(0deg);}
 }
 
-.nds{
+.nds {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -224,7 +258,7 @@ div.contact-box a :hover {
   cursor: pointer;
 }
 
-.nd1{
+.nd1 {
   background: #d3a411;
   right: 40px;
   bottom: 120px;

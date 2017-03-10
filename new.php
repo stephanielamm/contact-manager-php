@@ -114,5 +114,13 @@ include 'header.php';
 </div>
 </div>
 </div>
+
+<div id="container-floating">
+  <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Back" onclick="location.href='index.php';">
+<p class="plus">+</p>
+    <i class="fa fa-chevron-left back" aria-hidden="true"></i>
+  </div>
+</div>
+
 <!-- END CREATE NEW CONTACT -->
 <?php include 'footer.php' ?>
