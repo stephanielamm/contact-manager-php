@@ -58,13 +58,18 @@
   </div>
   <div class="row">
   <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
-    <p style="font-family: 'Poppins', sanss-serif; font-weight: 400; font-size: 35px;">This is Poppins in 400<p>
+    <p style="font-family: 'Poppins', sanss-serif; font-weight: 600; font-size: 35px;">This is Poppins in 600<p>
     </div>
   </div>
   <div class="row">
   <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
-      <p style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 35px;">This is Poppins in 300<p>
+      <p style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 35px;">This is Poppins in 400<p>
   </div>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+    <p style="font-family: 'Poppins', sanss-serif; font-weight: 300; font-size: 35px;">This is Poppins in 300<p>
+    </div>
   </div>
 </div></br>
 <div class="container">
