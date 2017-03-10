@@ -1,4 +1,37 @@
 
+/* COLORS */
+.swatch {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.main1 {
+  background: #607D8B;
+}
+.main2 {
+  background: #78909C;
+}
+.neutral1 {
+  background: #f1f1f1;
+}
+.neutral2 {
+  background: #424242;
+}
+.text {
+  background: #263238;
+}
+.accent1 {
+  background: #EF9A9A;
+}
+.accent2 {
+  background: #EF5350;
+}
+.accent3 {
+  background: #B71C1C;
+}
 /* GENERAL FONT RULES */
 body{
   font-family: 'Roboto Slab', serif;
@@ -11,9 +44,21 @@ p {
   font-weight: 100;
   color: #263238;
 }
-h1,h2 {
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+}
+h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 35px;
+}
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+}
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
 }
 
 .form-group {
@@ -28,10 +73,9 @@ h1,h2 {
 
 /* BUTTONS */
 .btn {
-  background-color: #EF5350
-;
-  border-color: #EF5350
-;
+  color: #B71C1C;
+  background-color: #EF5350;
+  border-color: #EF5350;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   margin-bottom: 20px;
@@ -39,16 +83,31 @@ h1,h2 {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #EF5350
-;
+  color: #B71C1C;
+  background-color: #EF5350;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 .btn-primary:hover {
-  background-color: #558B2F;
-  border-color: #558B2F;
+  color: #B71C1C;
+  background-color: #EF9A9A;
+  border-color: #EF5350;
 }
-.btn-danger:hover {
-  background-color: #424242;
+.btn-delete:focus,
+.btn-delte:active,
+.btn-delete.active {
+  background-color: #9E9E9E;
   border-color: #424242;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.btn-delete:hover {
+  background-color: #9E9E9E;
+  border-color: #424242;
+}
+.delete-button {
+  float:right;
 }
 
 /* HEADER */
@@ -291,8 +350,7 @@ div.panel-default a :hover {
     transition: 0.3s
 }
 .sidenav a:hover, .offcanvas a:focus{
-    color: #EF5350
-;
+    color: #EF5350;
 }
 .sidenav .closebtn {
     position: absolute;

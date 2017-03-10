@@ -15,11 +15,14 @@
 
 
 <!-- START OF EDIT CONTACT FORM -->
+<div class="container panel panel-default" id="presentation">
+  <div class="row panel-heading">
+
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
-
     <h1>Edit Contact</h1>
 
+  </div>
   <div class="form-group">
     <label for="contact_first">First Name</label>
     <input class="form-control" type="text" name="first" id="first" value="<?= $contact['first']; ?>" />
@@ -118,9 +121,11 @@
     <textarea class="form-control" name="notes" id="notes"><?= $contact['notes']; ?></textarea>
   </div>
 
-  <button class="btn btn-primary">Save Contact</button>
+  <button class="btn btn-primary">Update</button>
+  &nbsp;&nbsp;
+  <a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-delete" style="
+    color: #B71C1C;">Delete</a>
 
-  <a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
 </form>
 </div>
 </div>
@@ -128,9 +133,9 @@
 
 <div id="container-floating">
   <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Back" onclick="location.href='index.php';">
-<p class="plus">+</p>
+<p class="plus"><</p>
     <i class="fa fa-chevron-left back" aria-hidden="true"></i>
   </div>
 </div>
-
+</div>
 <?php   include 'footer.php'; ?>

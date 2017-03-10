@@ -8,10 +8,12 @@ include 'header.php';
     <div class="col col-lg-6 col-md-10">
 
   <!-- START OF ADD NEW CONTACT FORM -->
+  <div class="container panel panel-default" id="presentation">
+    <div class="row panel-heading">
   <form method="POST" action="/create.php">
 
       <h1>Create New Contact</h1>
-
+</div>
     <input type="hidden" name="id" id="id" value="<?= $contact['id']; ?>" />
 
   <div class="form-group">
@@ -103,8 +105,9 @@ include 'header.php';
     <label for="contact_notes">Notes</label>
     <textarea class="form-control" name="notes" id="notes" rows="3"></textarea>
   </div>
-  <button class="btn btn-primary">Create New Contact</button>
+  <button class="btn btn-primary">Create</button>
 </form>
+</div>
 </div>
 </div>
 </div>
