@@ -1,38 +1,16 @@
 
+/* GENERAL STYLING RULES */
 body{
-  font-family: 'Roboto';
+  font-family: 'Vollkorn', serif;
   background: #f1f1f1;
   color: #263238;
 }
 p {
-  font-family: 'Roboto';
+  font-family: 'Volkorn', serif;
   color: #263238;
 }
-
-/* BOXES */
-#presentation{
-  background: #FFF;
-  transition: all 0.2s;
-  border-radius: 3px;
-}
-
-#presentation:hover{
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  transition: all 0.3s;
-  transform: translateZ(10px);
-}
-
-.footer-text{
-    color: white;
-    font-size: 20px;
-}
-.git-button {
-  color: white;
-}
-
-/* mouse over link */
-a:hover {
-    color: #292b2c;
+h2 {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* HEADER */
@@ -52,23 +30,24 @@ a:hover {
   padding-right: 15px;
   font-size: 35px;
 }
+
+/* SHADOW BOXES */
+#presentation{
+  background: #FFF;
+  transition: all 0.2s;
+  border-radius: 3px;
+}
+#presentation:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s;
+  transform: translateZ(10px);
+}
 /* CONTACT LIST */
-.new-contact {
-  font-size: 30px;
-}
-.panel-heading {
-  background-color: #90A4AE;
-}
 .panel-title {
-  padding-left: 20px;
-  font-family: 'Poppins', sans-serif, 600;
+  padding-left: 5px;
+  font-family: 'Poppins', sans-serif;
   font-size: 40px;
 }
-.edit-icon {
-  float: right;
-}
-
-/* CONTACT PANELS */
 div.panel-default a {
   text-decoration: none;
   color: #455A64;
@@ -80,31 +59,28 @@ div.panel-default a :hover {
 .contact-box{
   border-bottom: 1px solid #ccc;
   padding: 10px 10px 10px 10px;
-
 }
 .left-detail {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.right-detail {
   padding-bottom: 20px;
   padding-top: 20px;
 }
 .name {
  font-size: 28px;
- font-family: 'Poppins', sans-serif;
 }
 .title {
-  font-size: 25px;
-  font-family: 'Poppins', sans-serif, 300;
+  font-size: 22px;
   font-weight: lighter;
   line-height: 98%;
 }
 .detail {
   color: #78909C;
   font-size: 22px;
-  font-family: 'Raleway', sans-serif, 200;
-  font-weight: lighter;
-}
-.right-detail {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  font-weight: 400;
 }
 
 /* ICONS */
@@ -113,8 +89,7 @@ div.panel-default a :hover {
   color: #FF9100;
 }
 
-/* FLOATING BUTTON FROM https://codepen.io/simoberny/pen/pJZJQY */
-
+/* FLOATING BUTTON MODIFIED FROM https://codepen.io/simoberny/pen/pJZJQY */
 #floating-button {
   width: 55px;
   height: 55px;
@@ -262,8 +237,7 @@ div.panel-default a :hover {
   animation-fill-mode:  forwards;
 }
 
-/* Animated SideNav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
-
+/* ANIMATED SIDENAV MODIFIED FROM https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
 .sidenav {
     height: 100%;
     width: 0;
@@ -276,7 +250,6 @@ div.panel-default a :hover {
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -285,11 +258,9 @@ div.panel-default a :hover {
     display: block;
     transition: 0.3s
 }
-
 .sidenav a:hover, .offcanvas a:focus{
     color: #FF9100;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
