@@ -17,7 +17,7 @@
             <span class="title"><?= $contact['title']; ?></span><br></span>
           </div>
           <div class="col-xs-6 col-sm-6 right-detail">
-            <p><span class="detail text-muted"><i class="fa fa-mobile icon" aria-hidden="true">&nbsp;&nbsp;</i><?= $contact['phone']; ?></span><br></span></p>
+            <p><span class="detail text-muted"><i class="fa fa-mobile" aria-hidden="true">&nbsp;&nbsp;</i><?= $contact['phone']; ?></span><br></span></p>
             <p><span class="detail text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;<?= $contact['address']; ?></span><br></span>
             <span class="detail text-muted"><?= $contact['city']; ?>, <?= $contact['state']; ?> <?= $contact['zipcode']; ?></span><br></span></p>
             <span class="detail text-muted"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;&nbsp;<?= $contact['notes']; ?></span><br></span>

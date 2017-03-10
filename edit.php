@@ -13,10 +13,6 @@
   <div class="row justify-content-md-center">
     <div class="col col-lg-6 col-md-10">
 
-<!-- CLOSE BUTTON -->
-<a href="index.php"><button type="button" class="close" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button></a>
 
 <!-- START OF EDIT CONTACT FORM -->
 <form method="POST" action="/update.php">
@@ -129,4 +125,12 @@
 </div>
 </div>
 </div>
+
+<div id="container-floating">
+  <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Back" onclick="location.href='index.php';">
+<p class="plus">+</p>
+    <i class="fa fa-chevron-left back" aria-hidden="true"></i>
+  </div>
+</div>
+c
 <?php   include 'footer.php'; ?>

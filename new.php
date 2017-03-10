@@ -7,12 +7,6 @@ include 'header.php';
   <div class="row justify-content-md-center">
     <div class="col col-lg-6 col-md-10">
 
-
-  <!-- CLOSE BUTTON -->
-  <a href="index.php"><button type="button" class="close" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button></a>
-
   <!-- START OF ADD NEW CONTACT FORM -->
   <form method="POST" action="/create.php">
 

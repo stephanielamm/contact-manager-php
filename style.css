@@ -2,12 +2,11 @@
 body{
   font-family: 'Roboto';
   background: #f1f1f1;
-}
-h3{
-  color: #555;
+  color: #263238;
 }
 p {
   font-family: 'Roboto';
+  color: #263238;
 }
 
 /* BOXES */
@@ -23,11 +22,6 @@ p {
   transform: translateZ(10px);
 }
 
-/* FOOTER */
-footer {
-  height: 40px;
-  background-color: grey;
-}
 .footer-text{
     color: white;
     font-size: 20px;
@@ -43,7 +37,7 @@ a:hover {
 
 /* HEADER */
 .navbar {
-  background-color: grey;
+  background-color: #607D8B;
 }
 .btn {
   color: white;
@@ -62,6 +56,9 @@ a:hover {
 .new-contact {
   font-size: 30px;
 }
+.panel-heading {
+  background-color: #90A4AE;
+}
 .panel-title {
   padding-left: 20px;
   font-family: 'Poppins', sans-serif, 600;
@@ -74,11 +71,11 @@ a:hover {
 /* CONTACT PANELS */
 div.panel-default a {
   text-decoration: none;
-  color: grey;
+  color: #455A64;
 }
 div.panel-default a :hover {
   text-decoration: none;
-  color: black;
+  color: #FF9100;
 }
 .contact-box{
   border-bottom: 1px solid #ccc;
@@ -100,6 +97,7 @@ div.panel-default a :hover {
   line-height: 98%;
 }
 .detail {
+  color: #78909C;
   font-size: 22px;
   font-family: 'Raleway', sans-serif, 200;
   font-weight: lighter;
@@ -110,12 +108,9 @@ div.panel-default a :hover {
 }
 
 /* ICONS */
-.icon {
+.fa {
   font-size: 25px;
-}
-
-.fa-pencil:hover {
-  color: black;
+  color: #FF9100;
 }
 
 /* FLOATING BUTTON FROM https://codepen.io/simoberny/pen/pJZJQY */
@@ -124,7 +119,7 @@ div.panel-default a :hover {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: #db4437;
+  background: #FF9100;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -265,4 +260,40 @@ div.panel-default a :hover {
   animation-delay: 0.2s;
     animation: bounce-out-nds 0.3s linear;
   animation-fill-mode:  forwards;
+}
+
+/* Animated SideNav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #263238;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #FF9100;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }

@@ -26,4 +26,21 @@
       <li><a href="index.php" class="my-contacts"> <button class="btn btn-outline my-contacts" type="button">Contacts</button></a></li>
       <li><a href="style.php" class="my-contacts"> <button class="btn btn-outline my-contacts" type="button">Style Guide</button></a></li>
 -->
-    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.php">Contacts</a>
+      <a href="styleguide.php">Style Guide</a>
+      <a href="https://github.com/stephanielamm">GitHub</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</nav>
