@@ -9,7 +9,7 @@
 
  ?>
 
-<div class=container-fluid style="background-color: rgba(0, 255, 0, 0.11); padding-top: 50px; padding-bottom: 120px;">
+<div class="container-fluid">
   <div class="row justify-content-md-center">
     <div class="col col-lg-6 col-md-10">
 
@@ -132,5 +132,5 @@
     <i class="fa fa-chevron-left back" aria-hidden="true"></i>
   </div>
 </div>
-c
+
 <?php   include 'footer.php'; ?>
