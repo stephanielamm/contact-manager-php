@@ -72,11 +72,11 @@ a:hover {
 }
 
 /* CONTACT PANELS */
-div.contact-box a {
+div.panel-default a {
   text-decoration: none;
   color: grey;
 }
-div.contact-box a :hover {
+div.panel-default a :hover {
   text-decoration: none;
   color: black;
 }
