@@ -6,7 +6,7 @@
 
 <div class="container panel panel-default">
   <div class="row panel-heading">
-      <h2 class="panel-title">All Contacts</h2>
+      <h1 class="panel-title">Contacts</h1>
   </div>
 
 <?php foreach ($contacts as $contact) :?>

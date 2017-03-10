@@ -7,6 +7,9 @@
   margin: 20px;
   border: 1px solid rgba(0, 0, 0, .2);
 }
+.white {
+  background: #FFF;
+}
 .main1 {
   background: #607D8B;
 }
@@ -76,6 +79,22 @@ h4 {
 a:hover {
   text-decoration: none;
   color: #EF5350;
+}
+a {
+  text-decoration: none;
+  color: #424242;
+}
+.list-ul {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #EF5350;
+  font-size: 20px;
+}
+.list-ol {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #78909C;
+  font-size: 20px;
 }
 .form-group {
   font-family: 'Roboto Slab', serif;

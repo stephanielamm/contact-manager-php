@@ -1,54 +1,73 @@
 <?php
   include 'header.php'
   ?>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Style Guide</title>
-
-    <!-- MOBILE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- BOOTSTRAP -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="https://use.fontawesome.com/587778f1fd.js"></script>
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400|Roboto+Slab:100,300" rel="stylesheet">
-    </head>
-  <body>
+<div class="container">
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
     <h1 class="align-center">Style Guide</h1>
   </div>
  </div>
+</div>
+<div class="container">
+ <div class="row">
+   <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+     <h1>Colors</h1>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+     <div class="swatch main2"></div>
+     <div class="swatch main1"></div>
+     <div class="swatch text"></div>
+   </div>
+ </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+     <div class="swatch accent1"></div>
+     <div class="swatch accent2"></div>
+     <div class="swatch accent3"></div>
+   </div>
+ </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+     <div class="swatch white"></div>
+     <div class="swatch neutral1"></div>
+     <div class="swatch neutral2"></div>
+</div>
+</div>
+</div>
 
-
-  <h1>Colors</h1>
-    <div class="swatch main2"></div>
-    <div class="swatch main1"></div>
-    <div class="swatch text"></div>
-
-    <div class="swatch accent1"></div>
-    <div class="swatch accent2"></div>
-    <div class="swatch accent3"></div>
-
-    <div class="swatch neutral1"></div>
-    <div class="swatch neutral2"></div>
-
+<div class="container">
+  <div class="row">
     <h1>Typography</h1>
-    <p>Roboto Slab<p>
-    100
-    300
-    400
-
-  Poppins
-  300
-  400
-
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+    <p style="font-family: 'Roboto Slab', serif; font-weight: 400; font-size: 35px;">This is Roboto Slab in 400<p>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+      <p style="font-family: 'Roboto Slab', serif; font-weight: 400; font-size: 35px;">This is Roboto Slab in 300<p>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+      <p style="font-family: 'Roboto Slab', serif; font-weight: 100; font-size: 35px;">This is Roboto Slab in 100<p>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+    <p style="font-family: 'Poppins', sanss-serif; font-weight: 400; font-size: 35px;">This is Poppins in 400<p>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+      <p style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 35px;">This is Poppins in 300<p>
+  </div>
+  </div>
+</div></br>
+<div class="container">
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
     <h1>This is a Header 1 tag.</h1></br>
@@ -69,8 +88,11 @@
   </div>
 </div>
     <p><a href="#">This is a<b> link. </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p></br>
+</div>
 
-  <h1>Input Form</h1>
+<div class="container">
+  <h1>Input Form</h1></br>
+<div class="row">
     <div class="container panel panel-default" id="presentation">
       <div class="row panel-heading">
     <form method="POST" action="/#.php">
@@ -169,39 +191,30 @@
     </div>
   </form>
 </div>
+</div>
 
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-    <h2 class="style-h2">Lists</h2>
+    <h2>Lists</h2>
 
   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-    <h4 class="align-center">Ordered List</h4>
-      <ol>
+    <h4>Ordered List</h4>
+      <ol class="list-ol">
         <li>This is the first item.</li>
         <li>This is the second item.</li>
         <li>This is the third item.</li>
         <li>This is the fourth item.</li>
         <li>This is the fifth item.</li>
-        <li>This is the sixth item.</li>
-        <li>This is the seventh item.</li>
-        <li>This is the eighth item.</li>
-        <li>This is the ninth item.</li>
-        <li>This is the tenth item.</li>
       </ol>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <h4 class="align-center">Unordered List</h4>
-        <ul>
+      <h4>Unordered List</h4>
+        <ul class="list-ul">
           <li>This is the first item.</li>
           <li>This is the second item.</li>
           <li>This is the third item.</li>
           <li>This is the fourth item.</li>
           <li>This is the fifth item.</li>
-          <li>This is the sixth item.</li>
-          <li>This is the seventh item.</li>
-          <li>This is the eighth item.</li>
-          <li>This is the ninth item.</li>
-          <li>This is the tenth item.</li>
         </ul>
       </div>
     </div>
@@ -211,7 +224,7 @@
   <h1>Shadow Box</h1>
     <div class="container panel panel-default">
       <div class="row panel-heading">
-          <h2 class="panel-title">All Contacts</h2>
+          <h2 class="panel-title">Contacts</h2>
       </div>
             <a href="#">
             <div class="row contact-box" id="presentation">
@@ -235,7 +248,6 @@
 <a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-danger btn-delete">Delete</a>
 
 
-<h1>Floating Button</h1>
 <div id="container-floating">
   <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="#;">
     <p class="plus">+</p>
