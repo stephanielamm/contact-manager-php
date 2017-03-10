@@ -20,52 +20,57 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400|Roboto+Slab:100,300" rel="stylesheet">
     </head>
   <body>
-<div class="container-fluid">
-    <h1>Style Guide</h1>
-    <p>By Stephanie Lamm.</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h1 class="align-center">Style Guide</h1>
+  </div>
+ </div>
 
-    <h1>Colors</h1>
+
+  <h1>Colors</h1>
     <div class="swatch main2"></div>
     <div class="swatch main1"></div>
     <div class="swatch text"></div>
+
     <div class="swatch accent1"></div>
     <div class="swatch accent2"></div>
     <div class="swatch accent3"></div>
+
     <div class="swatch neutral1"></div>
     <div class="swatch neutral2"></div>
 
-
-    color squares here with #
-
     <h1>Typography</h1>
-    Poppins
+    <p>Roboto Slab<p>
+    100
     300
     400
 
-    Roboto Slab
-    100
-    300
+  Poppins
+  300
+  400
 
-    light
-    regular
-    bold
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h1>This is a Header 1 tag.</h1></br>
+    <h2>This is a Header 2 tag.</h2></br>
+    <h3>This is a Header 3 tag.</h3></br>
+    <h4>This is a Header 4 tag.</h4></br>
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+    <p>This is a <b>paragraph. </b>Vivamus aliquet vehicula elementum. Proin ac ultrices elit, eget interdum neque. In suscipit consectetur porta. Mauris a nulla convallis massa tempor dignissim iaculis in libero.</p></br>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+    <p class="light-text">This is<b> light-text. </b>Maecenas ut dolor pellentesque, venenatis diam quis, dignissim nulla. Curabitur commodo congue diam, vehicula ullamcorper ante condimentum non. Praesent placerat, lectus in ultrices vulputate, augue arcu porta mi, volutpat dictum elit.</p></br>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+    <p class="lead-text">This is<b> lead-text. </b>Phasellus mollis dolor nec sapien imperdiet, sit amet blandit mauris suscipit. Cras purus sem, faucibus vel dignissim eu, auctor ac est.</p></br>
+  </div>
+</div>
+    <p><a href="#">This is a<b> link. </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p></br>
 
-
-    <h1>h1. here.</h1>
-    <h2>h2. in a different color.</h2>
-    <h3>h3. in a bold font.</h3>
-    <h4>h4. in an italic font.</h4>
-    <h5></h5>
-
-    <p><b>A paragraph.</b>lorem ipsum here with ITALICS every once in a while.</p>
-    p.lead-text (bigger, bolder)
-    p.light-text
-
-    LINK STYLING
-
-    INPUT (FORM) EXAMPLES
-    watch padding on the inputs (should be 8-14px padding on the right, top and bottom)
-
+  <h1>Input Form</h1>
     <div class="container panel panel-default" id="presentation">
       <div class="row panel-heading">
     <form method="POST" action="/#.php">
@@ -165,7 +170,11 @@
   </form>
 </div>
 
-    LIST EXAMPLES
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <h2 class="style-h2">Lists</h2>
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
     <h4 class="align-center">Ordered List</h4>
       <ol>
         <li>This is the first item.</li>
@@ -179,7 +188,8 @@
         <li>This is the ninth item.</li>
         <li>This is the tenth item.</li>
       </ol>
-
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
       <h4 class="align-center">Unordered List</h4>
         <ul>
           <li>This is the first item.</li>
@@ -193,6 +203,9 @@
           <li>This is the ninth item.</li>
           <li>This is the tenth item.</li>
         </ul>
+      </div>
+    </div>
+  </div>
 
 
   <h1>Shadow Box</h1>
@@ -230,5 +243,5 @@
   </div>
 </div>
 </div>
-  </body>
-</html>
+
+<?php include 'footer.php' ?>

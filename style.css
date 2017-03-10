@@ -2,12 +2,11 @@
 /* COLORS */
 .swatch {
   float: left;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
   border: 1px solid rgba(0, 0, 0, .2);
 }
-
 .main1 {
   background: #607D8B;
 }
@@ -32,6 +31,7 @@
 .accent3 {
   background: #B71C1C;
 }
+
 /* GENERAL FONT RULES */
 body{
   font-family: 'Roboto Slab', serif;
@@ -41,8 +41,21 @@ body{
 }
 p {
   font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #263238;
+  font-size: 22px;
+}
+p.light-text {
+  font-family: 'Roboto Slab', serif;
   font-weight: 100;
   color: #263238;
+  font-size: 20px;
+}
+p.lead-text {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #263238;
+  font-size: 24px;
 }
 h1 {
   font-family: 'Poppins', sans-serif;
@@ -50,25 +63,30 @@ h1 {
 }
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 35px;
+  font-size: 40px;
 }
 h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 25px;
+  font-size: 35px;
 }
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 30px;
 }
-
+a:hover {
+  text-decoration: none;
+  color: #EF5350;
+}
 .form-group {
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
   font-size: 20px;
 }
-
 .form-group label {
   font-weight: 100;
+}
+.align-center {
+  text-align: center;
 }
 
 /* BUTTONS */
