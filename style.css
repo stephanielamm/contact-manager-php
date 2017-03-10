@@ -1,12 +1,14 @@
 
 /* GENERAL STYLING RULES */
 body{
-  font-family: 'Vollkorn', serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
   background: #f1f1f1;
   color: #263238;
 }
 p {
-  font-family: 'Volkorn', serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
   color: #263238;
 }
 h2 {
@@ -16,19 +18,7 @@ h2 {
 /* HEADER */
 .navbar {
   background-color: #607D8B;
-}
-.btn {
-  color: white;
-}
-.form-inline {
-  padding-left: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-.my-contacts {
-  padding-right: 15px;
-  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* SHADOW BOXES */
@@ -46,6 +36,7 @@ h2 {
 .panel-title {
   padding-left: 5px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   font-size: 40px;
 }
 div.panel-default a {
@@ -64,6 +55,7 @@ div.panel-default a :hover {
   padding-bottom: 20px;
   padding-top: 20px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 .right-detail {
   padding-bottom: 20px;
@@ -80,7 +72,6 @@ div.panel-default a :hover {
 .detail {
   color: #78909C;
   font-size: 22px;
-  font-weight: 400;
 }
 
 /* ICONS */

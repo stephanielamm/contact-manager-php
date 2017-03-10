@@ -18,7 +18,7 @@
    <!-- CUSTOM CSS -->
    <link rel="stylesheet" type="text/css" href="style.css">
    <!-- GOOGLE FONTS -->
-   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600|Vollkorn:400,400i,700,700i" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600|Roboto+Slab:100,300,400,700" rel="stylesheet">
    </head>
  <body>
    <nav class="navbar">
