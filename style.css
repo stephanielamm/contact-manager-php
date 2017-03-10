@@ -1,5 +1,5 @@
 
-/* GENERAL STYLING RULES */
+/* GENERAL FONT RULES */
 body{
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
@@ -11,12 +11,27 @@ p {
   font-weight: 100;
   color: #263238;
 }
-h2 {
+h1,h2 {
   font-family: 'Poppins', sans-serif;
+  font-size: 35px;
 }
+
+.form-group {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.form-group label {
+  font-weight: 100;
+}
+
+/* BUTTONS */
 .btn {
-  background-color: #FF9100;
-  border-color: #FF9100;
+  background-color: #EF5350
+;
+  border-color: #EF5350
+;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   margin-bottom: 20px;
@@ -24,15 +39,16 @@ h2 {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #FF9100;
+  background-color: #EF5350
+;
 }
 .btn-primary:hover {
-  background-color: #AED581;
-  border-color: #AED581;
+  background-color: #558B2F;
+  border-color: #558B2F;
 }
 .btn-danger:hover {
-  background-color: #EF9A9A;
-  border-color: #EF9A9A;
+  background-color: #424242;
+  border-color: #424242;
 }
 
 /* HEADER */
@@ -52,6 +68,7 @@ h2 {
   transition: all 0.3s;
   transform: translateZ(10px);
 }
+
 /* CONTACT LIST */
 .panel-title {
   padding-left: 5px;
@@ -65,7 +82,8 @@ div.panel-default a {
 }
 div.panel-default a :hover {
   text-decoration: none;
-  color: #FF9100;
+  color: #EF5350
+;
 }
 .contact-box{
   border-bottom: 1px solid #ccc;
@@ -97,7 +115,8 @@ div.panel-default a :hover {
 /* ICONS */
 .fa {
   font-size: 25px;
-  color: #FF9100;
+  color: #EF5350
+;
 }
 
 /* FLOATING BUTTON MODIFIED FROM https://codepen.io/simoberny/pen/pJZJQY */
@@ -105,7 +124,8 @@ div.panel-default a :hover {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: #FF9100;
+  background: #EF5350
+;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -271,7 +291,8 @@ div.panel-default a :hover {
     transition: 0.3s
 }
 .sidenav a:hover, .offcanvas a:focus{
-    color: #FF9100;
+    color: #EF5350
+;
 }
 .sidenav .closebtn {
     position: absolute;
