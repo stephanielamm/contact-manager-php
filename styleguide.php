@@ -15,14 +15,14 @@
    </div>
  </div>
  <div class="row">
-   <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
      <div class="swatch main2"></div>
      <div class="swatch main1"></div>
      <div class="swatch text"></div>
    </div>
  </div>
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md- col-lg-12 col-xl-12">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
      <div class="swatch accent1"></div>
      <div class="swatch accent2"></div>
      <div class="swatch accent3"></div>
